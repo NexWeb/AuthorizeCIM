@@ -6,11 +6,11 @@ import (
 )
 
 type Range struct {
-	Start   time.Time `"omitempty"`
-	End     time.Time `"omitempty"`
-	BatchId string    `"omitempty"`
-	Sorting Sorting   `"omitempty"`
-	Paging  Paging    `"omitempty"`
+	Start   time.Time `json:"Start,omitempty"`
+	End     time.Time `json:"End,omitempty"`
+	BatchId string    `json:"BatchId,omitempty"`
+	Sorting Sorting   `json:"Sorting,omitempty"`
+	Paging  Paging    `json:"Paging,omitempty"`
 }
 
 func (r BatchListResponse) List() []BatchList {
